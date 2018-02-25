@@ -7,12 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>blogs</ion-title>
+    <ion-title>News</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <ion-list>
+    <ion-item *ngFor="let p of posts">
+      <h2>{{p.title.rendered}}</h2>
+      <p>{{p.date}}</p>
+      <div [innerHTML]="p.excerpt.rendered" padding></div>
+    </ion-item>
+  </ion-list>
 </ion-content>

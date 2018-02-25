@@ -29,6 +29,7 @@ import { BlogsPage } from '../pages/blogs/blogs';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
+import { WordpressProvider } from '../providers/wordpress/wordpress';
 
 
 @NgModule({
@@ -97,7 +98,8 @@ import { UserData } from '../providers/user-data';
     ConferenceData,
     UserData,
     InAppBrowser,
-    SplashScreen
+    SplashScreen,
+    WordpressProvider
   ]
 })
 export class AppModule { }

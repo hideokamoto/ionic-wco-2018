@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController} from 'ionic-angular';
+import { WordpressProvider } from '../../providers/wordpress/wordpress'
 
 /**
  * Generated class for the BlogsPage page.
@@ -8,17 +9,34 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
+@IonicPage()
 @Component({
   selector: 'page-blogs',
-  templateUrl: 'blogs.html',
+  templateUrl: 'blogs.html'
 })
 export class BlogsPage {
+  posts: {
+    ID: number,
+    title: {
+      rendered: string
+    },
+    content: {
+      rendered: string,
+    },
+    date: string,
+  }[] = [];
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public loadingCtrl: LoadingController, public navCtrl: NavController, public wp: WordpressProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad BlogsPage');
+    let loading = this.loadingCtrl.create();
+    loading.present();
+    this.wp.getPosts()
+      .subscribe( data => {
+        this.posts = JSON.parse(data['_body'])
+        loading.dismiss();
+      })
   }
 
 }
