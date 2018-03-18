@@ -8,9 +8,10 @@ import { Storage } from '@ionic/storage';
 import { AboutPage } from '../pages/about/about';
 import { MapPage } from '../pages/map/map';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
+/*
 import { SchedulePage } from '../pages/schedule/schedule';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
-import { SupportPage } from '../pages/support/support';
+*/
 import { BlogsPage } from '../pages/blogs/blogs';
 
 import { ConferenceData } from '../providers/conference-data';

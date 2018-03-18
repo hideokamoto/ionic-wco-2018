@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, LoadingController} from 'ionic-angular';
+import { NavController, LoadingController} from 'ionic-angular';
 import { WordpressProvider } from '../../providers/wordpress/wordpress'
 
 /**
@@ -9,7 +9,6 @@ import { WordpressProvider } from '../../providers/wordpress/wordpress'
  * Ionic pages and navigation.
  */
 
-@IonicPage()
 @Component({
   selector: 'page-blogs',
   templateUrl: 'blogs.html'
