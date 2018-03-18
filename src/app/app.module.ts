@@ -13,13 +13,10 @@ import { ConferenceApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { PopoverPage } from '../pages/about-popover/about-popover';
-import { AccountPage } from '../pages/account/account';
-import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { ScheduleFilterPage } from '../pages/schedule-filter/schedule-filter';
 import { SessionDetailPage } from '../pages/session-detail/session-detail';
-import { SignupPage } from '../pages/signup/signup';
 import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
@@ -36,20 +33,15 @@ import { WordpressProvider } from '../providers/wordpress/wordpress';
   declarations: [
     ConferenceApp,
     AboutPage,
-    AccountPage,
-    LoginPage,
     MapPage,
     PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
     SessionDetailPage,
-    SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    TutorialPage,
-    SupportPage,
-    BlogsPage
+    BlogsPage,
   ],
   imports: [
     BrowserModule,
@@ -65,10 +57,6 @@ import { WordpressProvider } from '../providers/wordpress/wordpress';
         { component: MapPage, name: 'Map', segment: 'map' },
         { component: AboutPage, name: 'About', segment: 'about' },
         { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
-        { component: SupportPage, name: 'SupportPage', segment: 'support' },
-        { component: LoginPage, name: 'LoginPage', segment: 'login' },
-        { component: AccountPage, name: 'AccountPage', segment: 'account' },
-        { component: SignupPage, name: 'SignupPage', segment: 'signup' },
         { component: BlogsPage, name: 'BlogsPage', segment: 'blogs'}
       ]
     }),
@@ -78,19 +66,14 @@ import { WordpressProvider } from '../providers/wordpress/wordpress';
   entryComponents: [
     ConferenceApp,
     AboutPage,
-    AccountPage,
-    LoginPage,
     MapPage,
     PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
     SessionDetailPage,
-    SignupPage,
     SpeakerDetailPage,
     SpeakerListPage,
     TabsPage,
-    TutorialPage,
-    SupportPage,
     BlogsPage
   ],
   providers: [
