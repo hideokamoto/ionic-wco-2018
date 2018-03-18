@@ -12,7 +12,6 @@ import { IonicStorageModule } from '@ionic/storage';
 import { ConferenceApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { PopoverPage } from '../pages/about-popover/about-popover';
 import { MapPage } from '../pages/map/map';
 import { SchedulePage } from '../pages/schedule/schedule';
 import { ScheduleFilterPage } from '../pages/schedule-filter/schedule-filter';
@@ -32,7 +31,6 @@ import { WordpressProvider } from '../providers/wordpress/wordpress';
     ConferenceApp,
     AboutPage,
     MapPage,
-    PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
     SessionDetailPage,
@@ -64,7 +62,6 @@ import { WordpressProvider } from '../providers/wordpress/wordpress';
     ConferenceApp,
     AboutPage,
     MapPage,
-    PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
     SessionDetailPage,
