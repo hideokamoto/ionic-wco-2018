@@ -1,18 +1,17 @@
 $categories: (
- ionic: color($colors, primary),
- angular: #AC282B,
- communication: #8E8D93,
- tooling: #FE4C52,
- services: #FD8B2D,
- design: #FED035,
- workshop: #69BB7B,
- food: #3BC7C4,
- all: #3BC7C4,
+  all: color($colors, primary),
   main: #69BB7B,
   room1:#FED035,
   room2:#FD8B2D,
- documentation: #B16BE3,
- navigation: #6600CC,
+  room3: #B16BE3,
+  room4: #6600CC,
+  room5: #3BC7C4,
+  room6: #AC282B,
+  room7: #FE4C52,
+  room8: #FD8B2D,
+  room9: #FED035,
+  workshop: #69BB7B,
+  other: #8E8D93,
 );
 
 @function auxiliary-categories() {
