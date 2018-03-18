@@ -20,7 +20,6 @@ import { SessionDetailPage } from '../pages/session-detail/session-detail';
 import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
-import { TutorialPage } from '../pages/tutorial/tutorial';
 import { BlogsPage } from '../pages/blogs/blogs';
 
 import { ConferenceData } from '../providers/conference-data';
@@ -55,7 +54,6 @@ import { WordpressProvider } from '../providers/wordpress/wordpress';
         { component: SpeakerDetailPage, name: 'SpeakerDetail', segment: 'speakerDetail/:speakerId' },
         { component: MapPage, name: 'Map', segment: 'map' },
         { component: AboutPage, name: 'About', segment: 'about' },
-        { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
         { component: BlogsPage, name: 'BlogsPage', segment: 'blogs'}
       ]
     }),
