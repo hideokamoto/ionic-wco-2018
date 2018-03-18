@@ -39,19 +39,13 @@ export class ConferenceApp {
   // the left menu only works after login
   // the login page disables the left menu
   appPages: PageInterface[] = [
+    /*
     { title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     { title: 'Speakers', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
-    { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 2, icon: 'map' },
-    { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 3, icon: 'information-circle' },
-    { title: 'Blog', name: 'TabsPage', component: TabsPage, tabComponent: BlogsPage, index: 4, icon: 'person'}
-  ];
-  loggedInPages: PageInterface[] = [
-    { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' },
-    { title: 'Logout', name: 'TabsPage', component: TabsPage, icon: 'log-out', logsOut: true }
-  ];
-  loggedOutPages: PageInterface[] = [
-    { title: 'Blog', name: 'BlogsPage', component: BlogsPage, icon: 'person'},
-    { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' }
+    */
+    { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 0, icon: 'information-circle' },
+    { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 1, icon: 'map' },
+    { title: 'Blog', name: 'TabsPage', component: TabsPage, tabComponent: BlogsPage, index: 2, icon: 'person'}
   ];
   rootPage: any;
 
@@ -71,7 +65,6 @@ export class ConferenceApp {
 
     // load the conference data
     confData.load();
-    this.enableMenu(true);
 
   }
 
@@ -102,12 +95,6 @@ export class ConferenceApp {
       this.userData.logout();
     }
   }
-
-  enableMenu(loggedIn: boolean) {
-    this.menu.enable(loggedIn, 'loggedInMenu');
-    this.menu.enable(!loggedIn, 'loggedOutMenu');
-  }
-
   platformReady() {
     // Call any initial plugins when ready
     this.platform.ready().then(() => {

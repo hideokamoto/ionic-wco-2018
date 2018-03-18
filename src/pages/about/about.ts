@@ -7,7 +7,6 @@ import { ConferenceData } from '../../providers/conference-data';
   templateUrl: 'about.html'
 })
 export class AboutPage {
-  conferenceDate = '2017-06-24';
   about: {
     title: string,
     description: string,

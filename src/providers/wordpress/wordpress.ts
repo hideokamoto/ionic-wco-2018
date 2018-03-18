@@ -10,11 +10,9 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class WordpressProvider {
 
-  constructor(public http: Http) {
-    console.log('Hello WordpressProvider Provider');
-  }
+  constructor(public http: Http) {}
   getPosts() {
-    return this.http.get('https://2017.kyoto.wordcamp.org/wp-json/wp/v2/posts')
+    return this.http.get('https://2018.osaka.wordcamp.org/wp-json/wp/v2/posts')
   }
 
 }
