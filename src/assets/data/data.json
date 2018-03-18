@@ -188,5 +188,12 @@
       "lat": 35.023797,
       "lng": 135.779243
     }
-  ]
+  ],
+  "about": {
+    "title": "WordCamp Kyoto 2017",
+    "description": "WordCamp Kyoto 2017のサンプル",
+    "date": "2017/06/24 - 25",
+    "location": "京都大学",
+    "imagePath": "https://wckyoto2017.github.io/2017.kyoto.wordcamp.org/images/main-image-624x700.svg"
+  }
 }

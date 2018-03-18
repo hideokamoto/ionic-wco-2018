@@ -151,4 +151,9 @@ export class ConferenceData {
     });
   }
 
+  getAbout() {
+    return this.load().map((data: any) => {
+      return data.about;
+    });
+  }
 }
