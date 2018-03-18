@@ -21,7 +21,6 @@ import { SpeakerDetailPage } from '../pages/speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
-import { SupportPage } from '../pages/support/support';
 import { BlogsPage } from '../pages/blogs/blogs';
 
 import { ConferenceData } from '../providers/conference-data';

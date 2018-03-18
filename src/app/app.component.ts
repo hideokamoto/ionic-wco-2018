@@ -6,10 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Storage } from '@ionic/storage';
 
 import { AboutPage } from '../pages/about/about';
-import { AccountPage } from '../pages/account/account';
-import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
-import { SignupPage } from '../pages/signup/signup';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SchedulePage } from '../pages/schedule/schedule';
@@ -50,15 +47,12 @@ export class ConferenceApp {
     { title: 'Blog', name: 'TabsPage', component: TabsPage, tabComponent: BlogsPage, index: 4, icon: 'person'}
   ];
   loggedInPages: PageInterface[] = [
-    { title: 'Account', name: 'AccountPage', component: AccountPage, icon: 'person' },
     { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' },
     { title: 'Logout', name: 'TabsPage', component: TabsPage, icon: 'log-out', logsOut: true }
   ];
   loggedOutPages: PageInterface[] = [
-    { title: 'Login', name: 'LoginPage', component: LoginPage, icon: 'log-in' },
     { title: 'Blog', name: 'BlogsPage', component: BlogsPage, icon: 'person'},
-    { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' },
-    { title: 'Signup', name: 'SignupPage', component: SignupPage, icon: 'person-add' }
+    { title: 'Support', name: 'SupportPage', component: SupportPage, icon: 'help' }
   ];
   rootPage: any;
 
