@@ -18,7 +18,7 @@ export class ConferenceData {
     if (this.data) {
       return Observable.of(this.data);
     } else {
-      return this.http.get('https://raw.githubusercontent.com/hideokamoto/wco2018-timetables/master/index.json?20180317')
+      return this.http.get('https://raw.githubusercontent.com/hideokamoto/wco2018-timetables/master/index.json?20180327-1')
         .map(this.processData, this);
     }
   }
