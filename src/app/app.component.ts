@@ -8,10 +8,9 @@ import { Storage } from '@ionic/storage';
 import { AboutPage } from '../pages/about/about';
 import { MapPage } from '../pages/map/map';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
-/*
 import { SchedulePage } from '../pages/schedule/schedule';
 import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
-*/
+
 import { BlogsPage } from '../pages/blogs/blogs';
 
 import { ConferenceData } from '../providers/conference-data';
@@ -40,13 +39,11 @@ export class ConferenceApp {
   // the left menu only works after login
   // the login page disables the left menu
   appPages: PageInterface[] = [
-    /*
     { title: 'Schedule', name: 'TabsPage', component: TabsPage, tabComponent: SchedulePage, index: 0, icon: 'calendar' },
     { title: 'Speakers', name: 'TabsPage', component: TabsPage, tabComponent: SpeakerListPage, index: 1, icon: 'contacts' },
-    */
-    { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 0, icon: 'information-circle' },
-    { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 1, icon: 'map' },
-    { title: 'Blog', name: 'TabsPage', component: TabsPage, tabComponent: BlogsPage, index: 2, icon: 'person'}
+    { title: 'About', name: 'TabsPage', component: TabsPage, tabComponent: AboutPage, index: 2, icon: 'information-circle' },
+    { title: 'Map', name: 'TabsPage', component: TabsPage, tabComponent: MapPage, index: 3, icon: 'map' },
+    { title: 'Blog', name: 'TabsPage', component: TabsPage, tabComponent: BlogsPage, index: 4, icon: 'person'}
   ];
   rootPage: any;
 
